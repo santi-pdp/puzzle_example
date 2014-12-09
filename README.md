@@ -1,4 +1,4 @@
-puzzle_example
+tile painting
 ==============
 
-example of puzzle game in HTML5 just for practice purposes
+example of tiles painting in HTML5 just to practice
