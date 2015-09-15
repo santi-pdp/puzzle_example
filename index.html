@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Tilepainting : example of puzzle game in HTML5">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Tilepainting</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/santi-pdp/tilepainting">View on GitHub</a>
-
-          <h1 id="project_title">Tilepainting</h1>
-          <h2 id="project_tagline">example of puzzle game in HTML5</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/santi-pdp/tilepainting/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/santi-pdp/tilepainting/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="tile-painting" class="anchor" href="#tile-painting" aria-hidden="true"><span class="octicon octicon-link"></span></a>tile painting</h1>
-
-<p>example of tiles painting in HTML5 just to practice</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Tilepainting maintained by <a href="https://github.com/santi-pdp">santi-pdp</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Bricks!</title>
+		<link rel="stylesheet" href="styles-sheets/style.css">
+	</head>
+	<body>
+		<section id="grid-container">
+			<canvas id="grid">
+			</canvas>
+			<form>
+				<button id="clear-track">Clear</button>
+				<!--
+				<button id="save-track">Save</button>
+				<input id="track-name" type="text" placeholder="Track Name"/>
+				-->
+				</form>
+		</section>
+		<section id="bricks-container">
+			<form>
+				<button id="square-brick" autocomplete = "off">Square</button>
+				<button id="triangle-brick" autocomplete = "off">Triangle</button>
+				<button id="circle-brick" autocomplete = "off">Circle</button>
+				<button id="curve-brick" autocomplete = "off">Curve</button>
+			</form>
+		</section>
+<!--
+		<section id="tracks-container">
+			<h1>Saved Tracks</h1>
+		</section>
+-->
+		<script src="javascripts/jquery-2.1.1.js"></script>
+		<script src="javascripts/grid.js"></script>
+		<script src="javascripts/bricks/square.js"></script>
+		<script src="javascripts/bricks/curve.js"></script>
+		<script src="javascripts/bricks/triangle.js"></script>
+		<script src="javascripts/bricks/circle.js"></script>
+		<script src="javascripts/application.js"></script>
+	</body>
 </html>
